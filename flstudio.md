@@ -2,7 +2,7 @@
 **Úvod do hudební produkce v FL Studio**
 
 ## Žák
-*… doplň své jméno …*
+*Vít Pospíšil*
 
 ---
 
@@ -55,4 +55,5 @@ Postup exportu hudebního projektu do formátu MP3 nebo WAV, doporučené nastav
 - práce s patterny, stopami a mixem  
 - použití základních efektů při zpracování zvuku  
 - export a příprava hotového hudebního souboru  
+
 - organizace projektu
