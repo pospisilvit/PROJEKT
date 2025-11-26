@@ -44,9 +44,10 @@ Postup exportu hudebního projektu do formátu MP3 nebo WAV, doporučené nastav
 ---
 
 ## Použité technologie / nástroje
-- **HTML** –     
-- **CSS** –  
-- **JSON** – 
+- **HTML**    
+- **CSS**  
+- **JSON**
+- - **PHP** 
 ---
 
 ## Očekávaný přínos / co se naučím
@@ -57,3 +58,4 @@ Postup exportu hudebního projektu do formátu MP3 nebo WAV, doporučené nastav
 - export a příprava hotového hudebního souboru  
 
 - organizace projektu
+
