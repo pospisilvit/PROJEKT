@@ -49,15 +49,11 @@ Postup exportu hudebního projektu do formátu MP3 nebo WAV, doporučené nastav
 - **JSON**
 -  **PHP**
 -  **JS**
+-  **AJAX**
 ---
 
-## Očekávaný přínos / co se naučím
-- orientace v prostředí digitálního audio studia (DAW)  
-- tvorba jednoduché hudby 
-- práce s patterny, stopami a mixem  
-- použití základních efektů při zpracování zvuku  
-- export a příprava hotového hudebního souboru  
+## Očekávaný přínos
+- Naučím se pracovat s PHP, JSON, AJAX, JS a implementovat je do skutečného projektu.
 
-- organizace projektu
 
 
