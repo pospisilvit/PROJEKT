@@ -1,0 +1,117 @@
+{
+  "projekt": {
+    "nazev": "Úvod do hudební produkce v FL Studio",
+    "autor": "Vít Pospíšil",
+    "rok": 2025,
+    "popis": "Projekt je zaměřen na začátečníky a na první vytvoření hudební produkce v programu FL Studio (Fruity Loops). Cílem je představit základní funkce programu, práci se stopami, patterny a mixem a ukázat postup tvorby jednoduchého beatu. Projekt má za úkol přiblížit uživateli, jak funguje moderní digitální audio pracovní prostředí (DAW) a jak se v něm vytváří elektronická hudba.",
+    "cilova_skupina": [
+      "Začínající producenti hudby.",
+      "Studenti zajímající se o tvorbu elektronické hudby.",
+      "Lidé, kteří chtějí porozumět základům práce v FL Studio."
+    ]
+  },
+  "sekce": [
+    {
+      "id": "co-je-fl",
+      "cislo": 1,
+      "nazev": "Co je FL Studio",
+      "obsah": [
+        {
+          "typ": "paragraf",
+          "text": "FL Studio (původně Fruity Loops) je profesionální **DAW (Digital Audio Workstation)**. Je známý pro svou rychlou křivku učení a intuitivní, na smyčky zaměřený pracovní tok, což ho činí ideálním nástrojem pro elektronickou, hip-hopovou a popovou hudbu."
+        },
+        {
+          "typ": "definice",
+          "termin": "DAW",
+          "popis": "Software, který umožňuje nahrávání, editaci a mixování zvuku a MIDI."
+        },
+        {
+          "typ": "paragraf",
+          "text": "Uživatelské prostředí je tvořeno několika okny, která se vzájemně doplňují (Channel Rack, Playlist, Mixer), což umožňuje flexibilní práci s patterny a stopami."
+        }
+      ],
+      "obrazek_url": "fl_studio_daw_interface.jpg"
+    },
+    {
+      "id": "zaklady",
+      "cislo": 2,
+      "nazev": "Základy ovládání",
+      "popis": "Seznamte se se čtyřmi nejdůležitějšími okny, bez kterých se v FL Studio neobejdete.",
+      "casti": [
+        {
+          "nazev": "Channel Rack",
+          "popis": "Srdce pro vytváření patternů. Zde vkládáte nástroje (syntezátory, samply) a programujete sekvence kroků pro bicí (step sequencer).",
+          "obrazek_url": "fl_studio_channel_rack.png"
+        },
+        {
+          "nazev": "Playlist",
+          "popis": "Zde se patterny, audio stopy a automatizační klipy skládají do finální skladby. Je to časová osa celého projektu.",
+          "obrazek_url": "fl_studio_playlist.png"
+        },
+        {
+          "nazev": "Mixer",
+          "popis": "Nástroj pro míchání a mastering. Každý kanál zde má svůj fader a sloty pro vkládání efektů (EQ, Reverb atd.).",
+          "obrazek_url": "fl_studio_mixer.png"
+        },
+        {
+          "nazev": "Browser",
+          "popis": "Knihovna, kde najdete všechny své samply, presety, pluginy a složky projektu. Rychlý přístup ke zvuku, zdrojům.",
+          "obrazek_url": "fl_studio_browser.png"
+        }
+      ]
+    },
+    {
+      "id": "beat",
+      "cislo": 3,
+      "nazev": "Tvorba jednoduchého beatu",
+      "kroky": [
+        "**Nastavení tempa (BPM):** V horní liště zvolte tempo, např. 128 BPM pro taneční hudbu.",
+        "**Drum Pattern v Channel Racku:** Vytvořte nový pattern. Vložte Kick, Clap/Snare a Hi-Hat. Naklikejte základní 4/4 rytmus (Kick na 1, 5, 9, 13; Clap/Snare na 5, 13).",
+        "**Přidání nástroje:** V Channel Racku přidejte nový syntezátor (např. GMS, Sytrus).",
+        "**Tvorba melodie/basové linky:** Pomocí Piano Roll (otevřete kliknutím pravým tlačítkem na kanál) naprogramujte jednoduchou melodii nebo basovou linku.",
+        "**Uspořádání v Playlistu:** Přetáhněte vytvořený pattern do Playlistu a nakopírujte ho, abyste vytvořili smyčku trvající 8 nebo 16 taktů."
+      ],
+      "obrazek_url": "fl_studio_beat_creation_workflow.png"
+    },
+    {
+      "id": "mix",
+      "cislo": 4,
+      "nazev": "Mix a základní efekty",
+      "temata": [
+        {
+          "nazev": "Nastavení hlasitostí (Gain Staging)",
+          "popis": "Každý zvuk musí být přiřazen ke stopě v Mixeru. Nastavte hlasitost tak, aby hlavní zvuk (kick, basa, vokál) dominoval a celková hlasitost signálu nepřesáhla 0 dB (Clip)."
+        },
+        {
+          "nazev": "Ekvalizér (EQ)",
+          "popis": "Nejdůležitější nástroj pro čištění zvuku. Odstraňte nežádoucí frekvence (např. hluboké basy ze syntezátorů), aby se zvuky vzájemně netloukly."
+        },
+        {
+          "nazev": "Reverb & Delay",
+          "popis": "Používejte je pro dodání prostoru a hloubky. Reverb simuluje prostředí (místnost, hala), Delay vytváří ozvěny. Aplikujte je většinou jako **Send Effect**."
+        }
+      ],
+      "obrazek_url": "fl_studio_mixer_with_fx.png"
+    },
+    {
+      "id": "export",
+      "cislo": 5,
+      "nazev": "Export hotové skladby",
+      "popis": "Po dokončení mixu a masteringu je potřeba projekt převést do standardního zvukového formátu.",
+      "formaty": [
+        {
+          "nazev": "WAV (Lossless)",
+          "doporuceni": "Doporučený formát pro mastering a distribuci.",
+          "detaily": "Nejlepší kvalita (24-bit, 44100 Hz)."
+        },
+        {
+          "nazev": "MP3 (Compressed)",
+          "doporuceni": "Formát pro rychlé sdílení a přehrávání na mobilních zařízeních.",
+          "detaily": "Zvolte datový tok alespoň 320 kbps pro zachování kvality."
+        }
+      ],
+      "postup": "Export se provádí v menu File -> Export. Zkontrolujte, zda máte v Playlistu správně označenou oblast, kterou chcete exportovat.",
+      "obrazek_url": "fl_studio_export_settings.png"
+    }
+  ]
+}
