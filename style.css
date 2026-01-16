@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 :root {
-    --bg-dark: #121212;        /* Pozadí FL Studia */
+    --bg-dark: #ffffff;        /* Pozadí FL Studia */
     --bg-panel: #1e1e1e;       /* Pozadí sekcí */
     --accent-orange: #ff8c00;  /* Ikonická FL Studio oranžová */
     --accent-green: #0ba131;   /* Barva aktivních stop/světel */
@@ -128,4 +128,121 @@ footer {
 @media (max-width: 600px) {
     header h1 { font-size: 2rem; }
     section { margin: 20px; padding: 20px; }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+:root {
+    /* Výchozí Světlý režim */
+    --bg-page: #f0f2f5;        
+    --bg-panel: #ffffff;       
+    --bg-card: #e8e8e8;        
+    --text-main: #1a1a1a;      
+    --text-muted: #555555;     
+    --border: #cccccc;         
+    --accent-orange: #ff8c00;  
+    --accent-green: #0ba131;   
+}
+
+body.dark-mode {
+    /* Tmavý režim */
+    --bg-page: #121212;        
+    --bg-panel: #1e1e1e;       
+    --bg-card: #282828;        
+    --text-main: #e0e0e0;      
+    --text-muted: #a0a0a0;     
+    --border: #333333;         
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-page); /* Použito zde */
+    color: var(--text-main);          /* Použito zde */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hlavička zůstává tmavá (styl FL Studia), ale přidáme plynulost */
+header {
+    background: linear-gradient(135deg, #252525 0%, #121212 100%);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--accent-orange);
+}
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--bg-panel); /* Změněno na proměnnou */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid var(--border);    /* Změněno na proměnnou */
+    transition: background-color 0.3s ease;
+}
+
+/* Karty uvnitř sekcí */
+#zaklady div div, #mix div div, #export li {
+    background: var(--bg-card);        /* Změněno na proměnnou */
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+    border: 1px solid transparent;
+    color: var(--text-main);
+}
+
+/* Tlačítko pro přepínání */
+.btn-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 15px;
+    background: var(--accent-orange);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: var(--text-muted);
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--text-main);
+    font-family: inherit;
+}
+
+.btn-submit {
+    padding: 12px;
+    background: var(--accent-green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.btn-submit:hover {
+    opacity: 0.8;
 }
