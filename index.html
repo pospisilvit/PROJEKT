@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Úvod do hudební produkce v FL Studio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>FL Studio: Produkce</h1>
         <h2>Úvod do hudební tvorby pro začátečníky</h2>
+        <button id="theme-toggle" class="btn-toggle">Přepnout režim</button>
     </header>
 
     <section id="uvod">
@@ -114,13 +116,31 @@
         </div>
     </section>
 
+    <section id="kontakt">
+    <h3>Máš dotaz k FL Studiu?</h3>
+    <form action="process.php" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="name">Jméno:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Tvůj dotaz:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Odeslat dotaz</button>
+    </form>
+</section>
+
     <footer>
         <p>
             &copy; 2025 Vytvořil Vít Pospíšil | Projekt pro Úvod do hudební produkce
         </p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 
 </html>
-
